@@ -56,3 +56,27 @@ a{
 .main-header .content nav ul a{
   padding: 20px 12px;
 }
+
+.main-header .content nav ul li{
+  transition: scale .05s ease-in-out;
+}
+
+.main-header .content nav ul li::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  margin: auto;
+  background-color: #d7d;
+  position: relative;
+  top: -15px;
+  transition: width .2s ease-in;
+}
+
+.main-header .content ul li:hover{
+  scale: 1.1;
+}
+
+.main-header .content ul li:hover::after{
+  width: 55%;
+}
