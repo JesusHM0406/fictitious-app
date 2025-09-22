@@ -30,6 +30,10 @@ a{
 .main-header{
   background-color: #202;
   color: #fff5ff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .main-header .content{
@@ -44,7 +48,7 @@ a{
   font-size: 1.5rem;
 }
 
-.main-header .content .logo span{
+.life-span{
   color: #d7d;
 }
 
@@ -79,4 +83,66 @@ a{
 
 .main-header .content ul li:hover::after{
   width: 55%;
+}
+
+/* SECCIÓN DEL HEADER */
+
+.hero {
+  color: #fff5ff;
+  background-color: #202;
+  margin-top: 63px;
+  min-height: 300px;
+}
+
+.hero .content{
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  padding: 20px 30px;
+  gap: 30px;
+}
+
+.hero h1, .hero h2{
+  margin: 0 0 10px 0;
+  width: 100%;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.hero h2{
+  font-size: 1rem;
+  font-weight: 500;
+  text-wrap: pretty;
+}
+
+.hero .content .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero .content .button{
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Alan sans";
+}
+
+.hero .content .button a{
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.hero .content .img{
+  background-image: url("assets/img/undraw_fitness-tracker_y5q5.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 300px;
 }
