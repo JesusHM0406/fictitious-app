@@ -130,7 +130,9 @@ a{
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
+  border: 2px solid transparent;
   font-family: "Alan sans";
+  transition: scale .1s ease, background-color .25s ease, border-color .1s ease, color .2s ease;
 }
 
 .hero .content .button a{
@@ -145,4 +147,10 @@ a{
   background-repeat: no-repeat;
   width: 600px;
   height: 300px;
+}
+.hero .content .button:hover{
+  scale: 1.1;
+  background-color: transparent;
+  color: #fff5ff;
+  border-color: #fff5ff;
 }
