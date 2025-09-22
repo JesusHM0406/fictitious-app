@@ -85,7 +85,7 @@ a{
   width: 55%;
 }
 
-/* SECCIÓN DEL HEADER */
+/* HERO SECTION */
 
 .hero {
   color: #fff5ff;
@@ -153,4 +153,46 @@ a{
   background-color: transparent;
   color: #fff5ff;
   border-color: #fff5ff;
+}
+
+/* BENEFITS SECTION */
+
+#benefits .content{
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  margin: 70px auto;
+  border-radius: 30px;
+}
+
+#benefits .content h2{
+  font-size: 2.5rem;
+}
+
+#benefits .content ul{
+  display: flex;
+  gap: 45px;
+  margin-top: 20px;
+}
+
+#benefits .content ul li{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+#benefits .content .icon{
+  width: 70px;
+  height: 70px;
+  fill: #202;
+  margin-bottom: 30px;
+}
+
+#benefits .content span{
+  font-weight: bold;
 }
