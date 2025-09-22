@@ -49,7 +49,7 @@ a{
 }
 
 .life-span{
-  color: #d7d;
+  color: #949;
 }
 
 .main-header .content nav ul{
@@ -174,7 +174,7 @@ a{
 
 #benefits .content ul{
   display: flex;
-  gap: 45px;
+  gap: 35px;
   margin-top: 20px;
 }
 
@@ -184,15 +184,23 @@ a{
   flex-direction: column;
   align-items: center;
   flex: 1;
+  border-radius: 20px;
+  padding: 10px 15px;
+  transition: box-shadow .2s ease, scale .2s ease;
 }
 
 #benefits .content .icon{
   width: 70px;
   height: 70px;
   fill: #202;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 #benefits .content span{
   font-weight: bold;
+}
+
+#benefits .content ul li:hover{
+  scale: 1.05;
+  box-shadow: 0 0 50px #6062;
 }
