@@ -1,0 +1,82 @@
+/* GENERAL SECTION */
+
+:root{
+  font-size: 16px;
+}
+
+body{
+  font-family: "Alan sans", "sans-serif";
+  background-color: #fff5ff;
+  color: #202;
+  margin: 0;
+}
+
+li{
+  list-style: none;
+}
+
+ul{
+  padding: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* HEADER SECTION */
+
+.main-header{
+  background-color: #202;
+  color: #fff5ff;
+}
+
+.main-header .content{
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header .content .logo p{
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.main-header .content .logo span{
+  color: #d7d;
+}
+
+.main-header .content nav ul{
+  display: flex;
+  margin: 0;
+}
+
+.main-header .content nav ul a{
+  padding: 20px 12px;
+}
+
+.main-header .content nav ul li{
+  transition: scale .05s ease-in-out;
+}
+
+.main-header .content nav ul li::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  margin: auto;
+  background-color: #d7d;
+  position: relative;
+  top: -15px;
+  transition: width .2s ease-in;
+}
+
+.main-header .content ul li:hover{
+  scale: 1.1;
+}
+
+.main-header .content ul li:hover::after{
+  width: 55%;
+}
