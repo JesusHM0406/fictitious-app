@@ -164,7 +164,7 @@ a{
   align-items: center;
   gap: 15px;
   padding: 15px;
-  margin: 70px auto;
+  margin: 100px auto;
   border-radius: 30px;
 }
 
@@ -204,3 +204,66 @@ a{
   scale: 1.05;
   box-shadow: 0 0 50px #6062;
 }
+
+/* HOW WORK SECTION */
+
+#howork .content{
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 100px auto;
+  align-items: center;
+}
+
+#howork .content h2{
+  font-size: 2.5rem;
+}
+
+#howork .content ol{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+#howork .content li{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: center;
+}
+
+#howork .content li .img{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 300px;
+}
+
+#howork .content li .img.sign-up{
+  background-image: url("assets/img/undraw_sign-up_qamz.svg");
+}
+
+#howork .content li .img.enjoy{
+  background-image: url("assets/img/undraw_winners_fre4.svg");
+}
+
+#howork .content li .img.set-up{
+  background-image: url("assets/img/undraw_profile_d7qw.svg");
+}
+
+#howork .content li .text{
+  text-align: center;
+}
+
+#howork .content li .text h3{
+  font-size: 1.5rem;
+}
+
+#howork .content li .text p{
+  font-size: 1.2rem;
+}
+
+/* Nota: debo asegurarme de no repetir propiedades en varios elementos y, de ser así, agruparlos con la misma propiedad para optimizar el archivo (por ejemplo los .content dentro de los section) */
