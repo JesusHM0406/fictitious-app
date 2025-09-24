@@ -169,7 +169,7 @@ a{
   border-radius: 30px;
 }
 
-#benefits .content h2{
+.section-title{
   font-size: 2.5rem;
 }
 
@@ -215,10 +215,6 @@ a{
   gap: 40px;
   margin: 100px auto;
   align-items: center;
-}
-
-#howork .content h2{
-  font-size: 2.5rem;
 }
 
 #howork .content ol{
