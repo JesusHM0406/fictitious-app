@@ -126,7 +126,7 @@ a{
 .hero .content .button{
   width: fit-content;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 3px;
   border: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -186,7 +186,7 @@ section .content{
   flex-direction: column;
   align-items: center;
   flex: 1;
-  border-radius: 20px;
+  border-radius: 3px;
   padding: 10px 15px;
   transition: box-shadow .2s ease, scale .2s ease;
 }
@@ -282,7 +282,7 @@ section .content{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 12px;
+  border-radius: 3px;
 }
 
 #testimonials .card p{
@@ -304,6 +304,7 @@ section .content{
   justify-content: space-around;
   width: 100%;
   gap: 30px;
+  margin-bottom: 30px;
 
 }
 
@@ -313,6 +314,40 @@ section .content{
   color: #fff5ff;
   border: 2px solid transparent;
   border-radius: 3px;
+  padding: 10px 20px;
+}
+
+#plans .plan h3{
+  margin: 0;
+}
+
+#plans .plan span{
+  margin-bottom: 25px;
+  display: block;
+  font-size: .8rem;
+}
+
+#plans .plan ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: start;
+}
+
+#plans .icon{
+  fill: #fff5ff;
+}
+
+#plans .button{
+  border: 2px solid #202;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-indent: 1px;
+  font-weight: bold;
+  font-family: "Alan sans";
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 /* Nota: debo asegurarme de no repetir propiedades en varios elementos y, de ser así, agruparlos con la misma propiedad para optimizar el archivo (por ejemplo los .content dentro de los section) */
