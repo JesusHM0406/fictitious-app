@@ -403,11 +403,60 @@ section .content{
   font-family: "Alan sans";
 }
 
-
 #contact .form #messaje{
   resize: none;
   border: 2px solid #202;
   background-color: transparent;
   font-family: "Alan sans";
 }
+
+/* FOOTER SECTION */
+
+.footer{
+  background-color: #202;
+  color: #fff5ff;
+  padding: 50px;
+}
+
+.footer .top{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer .top div{
+  flex: 1;
+}
+
+.footer .top div > p{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer .icon{
+  fill: #fff5ff;
+  width: 25px;
+  height: 25px;
+}
+
+.footer a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer a p{
+  margin: 5px 0;
+}
+
+.footer .links a{
+  margin: 13px 0;
+}
+
+.footer .rights{
+  display: grid;
+  place-content: center;
+  margin-top: 40px;
+}
+
 /* Nota: debo asegurarme de no repetir propiedades en varios elementos y, de ser así, agruparlos con la misma propiedad para optimizar el archivo (por ejemplo los .content dentro de los section) */
