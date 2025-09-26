@@ -370,4 +370,44 @@ section .content{
   scale: 1.1;
 }
 
+/* CONTACT SECTION */
+
+#contact .content{
+  max-width: 1000px;
+  padding: 10px;
+}
+
+#contact .form{
+  box-shadow: 0 0 40px 0 #2023;
+  border-radius: 3px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: initial;
+  max-width: 100%;
+  width: 450px;
+  box-sizing: border-box;
+}
+
+#contact .form input{
+  border: none;
+  background-color: transparent;
+  margin-bottom: 15px;
+  border-left: 2px solid #202;
+  padding: 2px 4px;
+  color: #101;
+}
+
+#contact .form input::placeholder{
+  font-family: "Alan sans";
+}
+
+
+#contact .form #messaje{
+  resize: none;
+  border: 2px solid #202;
+  background-color: transparent;
+  font-family: "Alan sans";
+}
 /* Nota: debo asegurarme de no repetir propiedades en varios elementos y, de ser así, agruparlos con la misma propiedad para optimizar el archivo (por ejemplo los .content dentro de los section) */
