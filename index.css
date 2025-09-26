@@ -267,7 +267,6 @@ section .content{
   gap: 40px;
 }
 
-
 #testimonials .card-container{
   display: flex;
   gap: 10px;
@@ -296,6 +295,24 @@ section .content{
   color: #d7d;
   text-align: center;
   margin: 5px;
+}
+
+/* PLANS SECTION */
+
+#plans .plans-container{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 30px;
+
+}
+
+#plans .plan{
+  flex: 1;
+  background-color: #202;
+  color: #fff5ff;
+  border: 2px solid transparent;
+  border-radius: 3px;
 }
 
 /* Nota: debo asegurarme de no repetir propiedades en varios elementos y, de ser así, agruparlos con la misma propiedad para optimizar el archivo (por ejemplo los .content dentro de los section) */
