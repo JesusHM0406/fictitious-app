@@ -12,37 +12,45 @@
     <title>FitLife - Transforma tu vida con hábitos saludables</title>
   </head>
   <body>
-    <header class="main-header">
-      <div class="content">
-        <div class="logo"><p>Fit<span class="life-span">Life</span></p></div>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo">Fit<span class="life-logo-accent">Life</span></div>
         <nav class="header__nav" aria-label="Navegación principal">
-          <ul>
-            <li><a href="#benefits">Beneficios</a></li>
-            <li><a href="#howork">Como funciona</a></li>
-            <li><a href="#testimonials">Testimonios</a></li>
-            <li><a href="#contact">Contacto</a></li>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#benefits" class="header__nav-link">Beneficios</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#howork" class="header__nav-link">Como funciona</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#testimonials" class="header__nav-link">Testimonios</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#contact" class="header__nav-link">Contacto</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
     <section class="hero">
-      <div class="content">
-        <div class="text">
-          <h1>Transforma tu vida con Fit<span class="life-span">Life</span> App</h1>
-          <h2>La aplicación definitiva para mejorar tus hábitos de salud y fitness. Simple, rápida y efectiva</h2>
-          <a href="#contact">Comienza ahora</a>
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title">Transforma tu vida con Fit<span class="life-logo-accent">Life</span> App</h1>
+          <h2 class="hero__subtitle">La aplicación definitiva para mejorar tus hábitos de salud y fitness. Simple, rápida y efectiva</h2>
+          <a href="#contact" class="btn">Comienza ahora</a>
         </div>
-        <div class="img" role="img" aria-label="Ilustración de persona usando FitLife"></div>
+        <div class="hero__content-img" role="img" aria-label="Ilustración de persona usando FitLife"></div>
       </div>
     </section>
 
     <main class="main">
-      <section id="benefits">
-        <div class="content">
-          <h2 class="section-title">¿Porqué elegir Fit<span class="life-span">Life</span> App?</h2>
-          <ul>
-            <li>
+      <section id="benefits" class="benefits">
+        <div class="benefits__content">
+          <h2 class="section__title">¿Porqué elegir Fit<span class="life-logo-accent">Life</span> App?</h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
               <div class="benefits__icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon" viewBox="0 0 256 256"><path d="M176,16H80A24,24,0,0,0,56,40V216a24,24,0,0,0,24,24h96a24,24,0,0,0,24-24V40A24,24,0,0,0,176,16ZM72,64H184V192H72Zm8-32h96a8,8,0,0,1,8,8v8H72V40A8,8,0,0,1,80,32Zm96,192H80a8,8,0,0,1-8-8v-8H184v8A8,8,0,0,1,176,224Z"></path></svg>
               </div>
@@ -52,7 +60,7 @@
               </div>
             </li>
 
-            <li>
+            <li class="benefits__item">
               <div class="benefits__icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon" viewBox="0 0 256 256"><path d="M232,64H208V48a8,8,0,0,0-8-8H56a8,8,0,0,0-8,8V64H24A16,16,0,0,0,8,80V96a40,40,0,0,0,40,40h3.65A80.13,80.13,0,0,0,120,191.61V216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16H136V191.58c31.94-3.23,58.44-25.64,68.08-55.58H208a40,40,0,0,0,40-40V80A16,16,0,0,0,232,64ZM48,120A24,24,0,0,1,24,96V80H48v32q0,4,.39,8Zm144-8.9c0,35.52-29,64.64-64,64.9a64,64,0,0,1-64-64V56H192ZM232,96a24,24,0,0,1-24,24h-.5a81.81,81.81,0,0,0,.5-8.9V80h24Z"></path></svg>
               </div>
@@ -62,17 +70,17 @@
               </div>
             </li>
 
-            <li>
+            <li class="benefits__item">
               <div class="benefits__icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon" viewBox="0 0 256 256"><path d="M216,64H56a8,8,0,0,1,0-16H192a8,8,0,0,0,0-16H56A24,24,0,0,0,32,56V184a24,24,0,0,0,24,24H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64Zm0,128H56a8,8,0,0,1-8-8V78.63A23.84,23.84,0,0,0,56,80H216Zm-48-60a12,12,0,1,1,12,12A12,12,0,0,1,168,132Z"></path></svg>
               </div>
               <div class="benfits__text">
                 <h3 class="benefits__text-title">Accesible:</h3>
-                <p class="benfefits__text-info">Calidad premium sin complicaciones</p>
+                <p class="benefits__text-info">Calidad premium sin complicaciones</p>
               </div>
             </li>
 
-            <li>
+            <li class="benefits__item">
               <div class="benefits__icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon" viewBox="0 0 256 256"><path d="M216,80H184V48a16,16,0,0,0-16-16H40A16,16,0,0,0,24,48V176a8,8,0,0,0,13,6.22L72,154V184a16,16,0,0,0,16,16h93.59L219,230.22a8,8,0,0,0,5,1.78,8,8,0,0,0,8-8V96A16,16,0,0,0,216,80ZM66.55,137.78,40,159.25V48H168v88H71.58A8,8,0,0,0,66.55,137.78ZM216,207.25l-26.55-21.47a8,8,0,0,0-5-1.78H88V152h80a16,16,0,0,0,16-16V96h32Z"></path></svg>
               </div>
@@ -85,140 +93,142 @@
         </div>
       </section>
 
-      <section id="howork">
-        <div class="content">
-          <h2 class="section-title">Así de simple funciona Fit<span class="life-span">Life</span> App</h2>
-          <ol>
-            <li>
-              <div class="text">
-                <h3>Regístrate</h3>
-                <p>Crea tu cuenta en segundos y accede a todas las funciones.</p>
+      <section id="how-work" class="how-work">
+        <div class="how-work__content">
+          <h2 class="section__title">Así de simple funciona Fit<span class="life-logo-accent">Life</span> App</h2>
+          <ol class="how-work__list">
+            <li class="how-work__step">
+              <div class="how-work__step-text">
+                <h3 class="how-work__step-title">Regístrate</h3>
+                <p class="how-work__step-description">Crea tu cuenta en segundos y accede a todas las funciones.</p>
               </div>
-              <div class="img sign-up"></div>
+              <div class="how-work__step-img sign-up" role="img" aria-label="Ilustración de registro de usuario"></div>
             </li>
 
-            <li>
-              <div class="img set-up"></div>
+            <li class="how-work__step">
+              <div class="how-work__step-img set-up" role="img" aria-label="Ilustración de configuración del perfil"></div>
               <div class="text">
-                <h3>Configura tu perfil</h3>
-                <p>Personaliza tu rutina, metas y recordatorios diarios.</p>
+                <h3 class="how-work__step-title">Configura tu perfil</h3>
+                <p class="how-work__step-description">Personaliza tu rutina, metas y recordatorios diarios.</p>
               </div>
             </li>
 
-            <li>
+            <li class="how-work__step">
               <div class="text">
-                <h3>Disfruta los resultados</h3>
-                <p>Ve tu progreso y logros día a día.</p>
+                <h3 class="how-work__step-title">Disfruta los resultados</h3>
+                <p class="how-work__step-description">Ve tu progreso y logros día a día.</p>
               </div>
-              <div class="img enjoy"></div>
+              <div class="how-work__step-img enjoy" role="img" aria-label="Ilustración de persona disfrutando los resultados"></div>
             </li>
           </ol>
         </div>
       </section>
 
-      <section id="testimonials">
-        <div class="content">
-          <h2 class="section-title">Lo que dicen nuestros usuarios</h2>
-          <div class="card-container">
-            <article class="card">
-                <blockquote>
+      <section id="testimonials" class="testimonials">
+        <div class="testimonials__content">
+          <h2 class="section__title">Lo que dicen nuestros usuarios</h2>
+          <div class="testimonials__grid">
+            <article class="testimonials__card">
+                <blockquote class="testimonials__card-quote">
                   FitLife App me ayudó a crear hábitos que nunca había logrado mantener.
                 </blockquote>
-              <cite class="author">Ana G.</cite>
+              <cite class="testimonials__card-author">Ana G.</cite>
             </article>
 
-            <article class="card">
-                <blockquote>
+            <article class="testimonials__card">
+                <blockquote class="testimonials__card-quote">
                   Una herramienta imprescindible para mi rutina diaria. Resultados visibles desde la primera semana.
                 </blockquote>
-              <cite class="author">Luis M.</cite>
+              <cite class="testimonials__card-author">Luis M.</cite>
             </article>
 
-            <article class="card">
-              <blockquote>
+            <article class="testimonials__card">
+              <blockquote class="testimonials__card-quote">
                 El soporte es increíble, siempre resuelven mis dudas al instante.
               </blockquote>
-              <cite class="author">Carla R.</cite>
+              <cite class="testimonials__card-author">Carla R.</cite>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="plans">
-        <div class="content">
-          <h2 class="section-title">Planes que se adaptan a ti</h2>
-          <div class="plans-container">
-            <article class="plan">
-              <div class="plan__icon" aria-hidden="true">
+      <section id="plans" class="plans">
+        <div class="plans__content">
+          <h2 class="section__title">Planes que se adaptan a ti</h2>
+          <div class="plans__grid">
+            <article class="plans__card">
+              <div class="plans__icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon" viewBox="0 0 256 256"><path d="M243.28,68.24l-24-23.56a16,16,0,0,0-22.59,0L104,136.23l-36.69-35.6a16,16,0,0,0-22.58.05l-24,24a16,16,0,0,0,0,22.61l71.62,72a16,16,0,0,0,22.63,0L243.33,90.91A16,16,0,0,0,243.28,68.24ZM103.62,208,32,136l24-24a.6.6,0,0,1,.08.08l42.35,41.09a8,8,0,0,0,11.19,0L208.06,56,232,79.6Z"></path></svg>
               </div>
-              <div class="plan__text">
-                <h3 class="plan__text-title">Básico</h3>
-                <span class="plan__text-price">$9/mes</span>
-                <ul class="plan__text-list">
-                  <li class="plan__text-info"> - Funciones esenciales</li>
-                  <li class="plan__text-info"> - Seguimiento básico de hábitos</li>
+              <div class="plans__text">
+                <h3 class="plans__text-title">Básico</h3>
+                <span class="plans__text-price">$9/mes</span>
+                <ul class="plans__text-list">
+                  <li class="plans__text-info"> - Funciones esenciales</li>
+                  <li class="plans__text-info"> - Seguimiento básico de hábitos</li>
                 </ul>
               </div>
             </article>
 
-            <article class="plan">
+            <article class="plans__card">
               <div class="plan__icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon" viewBox="0 0 256 256"><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path></svg>
               </div>
-              <div class="plan__text">
-                <h3 class="plan__text-title">Pro</h3>
-                <span class="plan__text-price">$19/mes</span>
-                <ul class="plan__text-list">
-                  <li class="plan__text-info"> - Acceso completo,</li>
-                  <li class="plan__text-info"> - Seguimiento avazado</li>
-                  <li class="plan__text-info"> - Recordatorios inteligentes</li>
+              <div class="plans__text">
+                <h3 class="plans__text-title">Pro</h3>
+                <span class="plans__text-price">$19/mes</span>
+                <ul class="plans__text-list">
+                  <li class="plans__text-info"> - Acceso completo,</li>
+                  <li class="plans__text-info"> - Seguimiento avazado</li>
+                  <li class="plans__text-info"> - Recordatorios inteligentes</li>
                 </ul>
               </div>
             </article>
 
-            <article class="plan">
-              <div class="plan__icon" aria-hidden="true">
+            <article class="plans__card">
+              <div class="plans__icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon" viewBox="0 0 256 256"><path d="M239.35,70.08a13.41,13.41,0,0,0-11.77-9.28l-36.94-2.92L176.43,24.22a13.51,13.51,0,0,0-24.86,0L137.36,57.88,100.42,60.8a13.39,13.39,0,0,0-7.66,23.58l28.06,23.68-8.56,35.39a13.32,13.32,0,0,0,5.1,13.91,13.51,13.51,0,0,0,15,.69L164,139l31.65,19.06a13.54,13.54,0,0,0,15-.69,13.34,13.34,0,0,0,5.09-13.91l-8.56-35.39,28.06-23.68A13.32,13.32,0,0,0,239.35,70.08ZM193.08,99a8,8,0,0,0-2.61,8l8.28,34.21L168.13,122.8a8,8,0,0,0-8.25,0l-30.62,18.43L137.54,107a8,8,0,0,0-2.62-8L108,76.26l35.52-2.81a8,8,0,0,0,6.74-4.87L164,35.91l13.79,32.67a8,8,0,0,0,6.74,4.87l35.53,2.81Zm-105,24.18L29.66,181.66a8,8,0,0,1-11.32-11.32l58.45-58.45a8,8,0,0,1,11.32,11.32Zm10.81,49.87a8,8,0,0,1,0,11.31L45.66,237.66a8,8,0,0,1-11.32-11.32l53.27-53.26A8,8,0,0,1,98.92,173.08Zm73-1a8,8,0,0,1,0,11.32l-54.28,54.28a8,8,0,0,1-11.32-11.32l54.29-54.28A8,8,0,0,1,171.94,172.06Z"></path></svg>
               </div>
-              <div class="plan__text">
-                <h3 class="plan__text-title">Premium</h3>
-                <span class="plan__text-price">$29/mes</span>
+              <div class="plans__text">
+                <h3 class="plans__text-title">Premium</h3>
+                <span class="plans__text-price">$29/mes</span>
               </div>
-              <ul class="plan__text-list">
-                <li class="plan__text-info"> - Todas las funciones</li>
-                <li class="plan__text-info"> - Soporte 24/7</li>
-                <li class="plan__text-info"> - Acceso a retos exclusivos</li>
+              <ul class="plans__text-list">
+                <li class="plans__text-info"> - Todas las funciones</li>
+                <li class="plans__text-info"> - Soporte 24/7</li>
+                <li class="plans__text-info"> - Acceso a retos exclusivos</li>
               </ul>
             </div>
           </div>
 
-          <button class="button">Comienza tu prueba gratuita</button>
+          <button class="btn">Comienza tu prueba gratuita</button>
         </div>
       </section>
 
-      <section id="contact">
-        <div class="content">
+      <section id="contact" class="contact">
+        <div class="contact__content">
           <form class="contac-form">
             <fieldset class="contact-form__fieldset">
               <legend class="contact-form__legend">Información de contacto</legend>
 
               <div class="contact-form__group">
-                <label for="username">Nombre:<abbr title="requerido">*</abbr></label>
-                <input type="text" id="username" name="username" required aria-describedby="name-error name-help" placeholder="John Doe">
+                <label for="username" class="contact-form__label">Nombre:<abbr title="requerido">*</abbr></label>
+                <input type="text" id="username" name="username"
+                class="contact-form__input" required aria-describedby="name-error name-help" placeholder="John Doe">
                 <small id="name-help" class="contact-form__help">Ingresa tu nombre y apellido</small>
                 <span id="name-error" class="contact-form__error" role="alert"></span>
               </div>
 
               <div class="contact-form__group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required aria-describedby="email-error" placeholder="ejemplo@gmail.com">
+                <label for="email" class="contact-form__label">Email:</label>
+                <input type="email" id="email" name="email"
+                class="contact-form__input" required aria-describedby="email-error" placeholder="ejemplo@gmail.com">
                 <span id="email-error" class="contact-form__error" role="alert"></span>
               </div>
 
               <div class="contact-form__group">
-                <label for="messaje">Dejanos un mensaje</label>
-                <textarea id="messaje" name="messaje" rows="4" aria-describedby="message-help" placeholder="Cuéntanos cómo podemos ayudarte"></textarea>
+                <label for="messaje" class="contact-form__label">Dejanos un mensaje</label>
+                <textarea id="messaje" name="messaje" class="contact-form__text-area" rows="4" aria-describedby="message-help" placeholder="Cuéntanos cómo podemos ayudarte"></textarea>
                 <small id="message-help" class="contact-form__help">Opcional: Máximo 500 caracteres</small>
               </div>
             </fieldset>
@@ -233,44 +243,44 @@
     </main>
 
     <footer class="footer">
-      <div class="content">
-        <div class="top">
-          <nav class="links" aria-label="Enlaces de pie de página">
-          <h3>Enlaces</h3>
-          <ul>
-            <li><a href="#benefits">Beneficios</a></li>
-            <li><a href="#howork">Cómo funciona</a></li>
-            <li><a href="#testimonials">Testimonios</a></li>
-            <li><a href="#contact">Contacto</a></li>
+      <div class="footer__content">
+        <div class="footer__top">
+          <nav class="footer__nav" aria-label="Enlaces de pie de página">
+          <h3 class="footer__nav-title">Enlaces</h3>
+          <ul class="footer__nav-list">
+            <li><a href="#benefits" class="footer__nav-link">Beneficios</a></li>
+            <li><a href="#howork" class="footer__nav-link">Cómo funciona</a></li>
+            <li><a href="#testimonials" class="footer__nav-link">Testimonios</a></li>
+            <li><a href="#contact" class="footer__nav-link">Contacto</a></li>
           </ul>
         </nav>
 
-        <nav class="social" aria-label="Redes sociales">
-          <h3>Redes sociales</h3>
-          <ul>
+        <nav class="footer__social" aria-label="Redes sociales">
+          <h3 class="footer__social-title">Redes sociales</h3>
+          <ul class="foote__social-list">
             <li>
-              <a href="https://www.facebook.com">
+              <a href="https://www.facebook.com" class="footer__social-link" aria-label="Síguenos en Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path></svg>
                 <p>Facebook</p>
               </a>
             </li>
 
             <li>
-              <a href="https://www.instagram.com">
+              <a href="https://www.instagram.com" class="footer__social-link" aria-label="Síguenos en Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg>
                 <p>Instagram</p>
               </a>
             </li>
 
             <li>
-              <a href="https://x.com">
+              <a href="https://x.com" class="footer__social-link" aria-label="Síguenos en X">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon" viewBox="0 0 256 256"><path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path></svg>
                 <p>Twitter</p>
               </a>
             </li>
 
             <li>
-              <a href="https://mx.linkedin.com">
+              <a href="https://mx.linkedin.com" class="footer__social-link" aria-label="Síguenos en LinkedIn">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icon" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path></svg>
                 <p>LinkedIn</p>
               </a>
@@ -279,8 +289,8 @@
         </nav>
         </div>
         
-        <div class="bottom">
-          <p>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
             © <time datetime="2025">2025</time> FitLife App. 
           Todos los derechos reservados.
           </p>
