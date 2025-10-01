@@ -13,6 +13,7 @@
   --transition: .2s ease;
   --margin-contn: 220px auto;
   --scale: 1.05;
+  font-size: clamp(14px, 3.8vw, 18px);
 }
 
 *{
@@ -74,12 +75,13 @@ section{
 .btn{
   border-radius: var(--border-rad);
   text-transform: uppercase;
-  text-indent: 1px;
+  letter-spacing: 1px;
   font-weight: bold;
   font-family: "Alan sans";
   padding: 8px 12px;
   cursor: pointer;
   transition: color var(--transition), background-color var(--transition), scale var(--transition);
+  font-size: .7rem;
 }
 
 .btn:hover{
@@ -110,7 +112,7 @@ section{
 
 .header__logo{
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .header__nav-list{
@@ -118,8 +120,9 @@ section{
 }
 
 .header__nav-link{
-  padding: 20px 12px;
+  padding: 20px 8px;
   font-size: .8rem;
+  text-align: center;
 }
 
 .header__nav-item{
@@ -156,7 +159,7 @@ section{
 }
 
 .hero__content{
-  margin: 55px auto;
+  margin: 50px auto;
   padding: 20px 30px;
 }
 
@@ -207,18 +210,20 @@ section{
 .benefits__list{
   gap: 40px;
   margin-top: 20px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .benefits__item{
-  flex-basis: 250px;
+  flex: 1;
+  width: clamp(250px, 80%, 300px);
   display: flex;
   text-align: center;
   flex-direction: column;
   align-items: center;
   flex: 1;
   border-radius: var(--border-rad);
-  padding: 20px 15px 10px 15px;
+  padding: 20px 15px;
   transition: box-shadow var(--transition), scale var(--transition);
 }
 
@@ -244,7 +249,7 @@ section{
 .how-work__list{
   width: 100%;
   flex-direction: column;
-  gap: 30px;
+  gap: 60px;
 }
 
 .how-work__step{
@@ -252,11 +257,11 @@ section{
   align-items: center;
   gap: 40px;
   justify-content: center;
-  min-height: 200px;
 }
 
 .how-work__step-img, .how-work__text{
   flex: 1;
+  aspect-ratio: 16/9;
 }
 
 .how-work__step-img{
@@ -280,10 +285,12 @@ section{
 .testimonials__grid{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
 .testimonials__card{
+  width: clamp(250px, 80%, 400px);
   flex: 1;
   background-color: var(--color-secondary);
   color: var(--color-primary);
@@ -294,6 +301,8 @@ section{
   justify-content: space-between;
   border-radius: var(--border-rad);
   gap: 10px;
+  position: relative;
+  min-height: 150px;
 }
 
 .testimonials__card-quote{
@@ -301,31 +310,51 @@ section{
   line-height: 1.6rem;
 }
 
+.testimonials__card-quote:before{
+  content: '❝';
+  position: absolute;
+  color: #d7d5;
+  right: 15px;
+  bottom: 10px;
+  font-size: 84px;
+  z-index: 0;
+}
+
+.testimonials__card-author{
+  text-align: center;
+}
+
 /* =============
   PLANS SECTION 
   =============*/
 
 .plans__grid{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  max-width: var(--max-wid);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 250px;
+  justify-content: center;
+  align-items: stretch;
   gap: 30px;
-
 }
 
 .plans__card{
-  flex: 1;
   background-color: var(--color-secondary);
   color: var(--color-primary);
   border: 2px solid var(--color-secondary);
   border-radius: var(--border-rad);
-  padding: 20px 20px;
+  padding: 15px 20px 20px 20px;
   transition: background-color .2s ease, color .2s ease, box-shadow .2s ease, scale .15s ease-in-out;
 }
 
 .plans__icon{
   fill: var(--color-primary);
   transition: fill .2s ease;
+}
+
+.plans__icon svg{
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 .plans__card:hover{
@@ -413,14 +442,15 @@ section{
 }
 
 .contact-form__actions{
-  text-align: center;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
 
 .btn--submit-form{
   border: 2px solid var(--color-secondary);
   background-color: var(--color-primary);
   color: var(--color-secondary);
-  margin-right: 20px;
 }
 
 .btn--delete{
@@ -486,7 +516,25 @@ section{
 }
 
 .footer__bottom{
-  display: grid;
-  place-content: center;
   margin-top: 40px;
+  text-align: center;
+}
+
+@media (min-width: 600px){
+  .how-work__list{
+    gap: 100px;
+  }
+}
+
+@media (min-width: 860px){
+  .testimonials__grid{
+    flex-direction: row;
+  }
+  .benefits__list{
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .plans__grid{
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
